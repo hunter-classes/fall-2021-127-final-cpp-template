@@ -1,4 +1,4 @@
-* Fall 2021 - 127 - Exam 1
+* Fall 2021 - 127 - Final Exam - C++ 
 
 * Last Name: 
 
@@ -8,94 +8,54 @@
 
 * Notes:
 
-* Instructions, part 1
+* Instructions
 
-- When run, the program(s) for each question should print out a line
-  explaining what it's testing, call the required functions, and print
-  the output. There should be no keyboard input unless the question
-  explicitly asks for it.
+- This part of the exam is to be done at home. It is due  right when
+  the in person part of the final starts (Thursday 12/16 at
+  11:30am). You must have pushed all your work to GitHub by then.
+
+- You must add a file name *final.cpp* to this repo, commit and push
+  it. When compiled and run it should print out sufficient information
+  to show that the question(s) are correct. 
+
 - Place any notes you want to tell me in this file under the *Notes:*
   heading above.
-- You are to complete all questions.
-- The only sites you may use for reference are our text book
-  (https://runestone.academy/runestone/books/published/thinkcspy/index.html)
-  and the online python3
-  documentation at https://docs.python.org/3/. You may not look at
-  your own prior work on repl.it or anywhere else.
-- Your may not use Python functions or methods that defeat the purpose of the
-  question. For example, if there was a question that explicitly asked
-  you to sort a list of numbers (something I would not ask since we
-  haven't covered it), you would not be allowed to use the built in
-  sort() method. If you have any questions about this, please ask
-  during the exam.
 
-* Overall instructions:
+- You may use the notes you took in class and the C++ references
+  mentioned on the main 135 site as well as the ones I've given
+  you. You may not search for code samples or solutions.
 
-Create a single program named *anwers.py*. It should contain all the
-functions specified below. When you run the program, it should
-demonstrate that each function works by running them in order. It
-should print a header before each function that looks as follows:
+* Questions
 
-#+begin_example
-------------------- Question 1 ----------------
-some brief description of what the output should be
-#+end_example
-
-Followed by the output of your tests.
-
-* 1
-
-Write a function  *f(n,k)*
-that will evaluate
-[[file:/eqn1.png]]
-
-* 2
-
-Write a function *remove_e(sentence)* that
-will take as a parameter a string representing a sentence. It will
-return a new string with all ther occurances of the letter 'e'
-removed.
+Create a file named *final.cpp* in this repo. You should hard code
+your tests. That is, there should be no keyboard input when the
+program is run.
 
 
+** isRightTriangle?
 
-* 3 
+Writer a function isRightTriangle. It will take three integer
+parameters. The first two represent the two legs of a right triangle
+and the third represents the hypotenuse.
 
-Write a function *box(length,height)* that will build a string consisting of
-*height* lines. The odd lines will consist of *length* 'O's and the
-even lines will consist of *length* 'X's. For example, *box(5,6)* will
-return:
+Recall that a triangle with legs *a* and *b* and hypoteneus *c* is a right triangle if
+*a^2+b^2=c^2*. Your program should return true if the three sides
+represents a right triangle and false otherwise. You should assume
+that your first two parameters are the legs and the third the
+hypotenuse.
 
-#+BEGIN_SRC 
-OOOOO
-XXXXX
-OOOOO
-XXXXX
-OOOOO
-#+END_SRC
+Test from main with numbers of your choosing. 
 
-For full credit, if height is an odd number, round it down to the
-nearest even.
+** FizzBuzz
 
+Write a function named fizzbuzz. It should accept an *int* as a
+parameter and it should return a *std::string*. If the parameter is
+divisible by *3* the function should return the *std::string** "fizz"
+if the number is divisible by *5*, return "buzz" and if divisible by
+both *3* and *5* return "fizzbuzz."
 
+Test from main.
 
-* 4 - makeacronym(w)
-
-*** an acronym is an abreviation formed by taking the first letter of a
-series of words. Some examples:
-
-| Phrase                      | Acronym |
-|-----------------------------+---------|
-| Laugh Out Loud              | lol     |
-| Read the... fine manual     | rtfm    |
-| In my humble opinion        | imo     |
-| In my not so humble opinion | imnsho  |
-
-Write a function ~makeacronym(w)~ that takes
-a string as a parameter and returns the acronym formed by taking the
-first letter of each word and making a new string out of them. Assume
-the input string is a sequence of words separated by spaces. Your
-function should also convert all input to lower case.
-
-
-
+For full credit, have the program print the results of fizzbuzz on the
+first 21 positive integers.
 
